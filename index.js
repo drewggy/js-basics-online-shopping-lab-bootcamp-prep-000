@@ -9,8 +9,12 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
- // write your code here
+function addToCart(itemName) {
+
+  var newObj = Object.assign({}, {itemName:`${itemName}`, itemPrice: 46})
+  cart.push(newObj);
+  return `${itemName} has been added to your cart.`;
+
 }
 
 function viewCart() {
