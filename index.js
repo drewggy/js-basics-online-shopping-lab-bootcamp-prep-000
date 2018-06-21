@@ -26,7 +26,7 @@ function viewCart() {
 //    console.log(`Loop ${i} - length is ${cart.length}`);
     if (i > 0 && i <= cart.length-1) outString += ", ";
     if (cart.length > 1 && i === cart.length-1) outString += "and ";
-    outString += `${cart[i].itemName} at ${cart[i].itemPrice}`;
+    outString += `${cart[i].itemName} at $${cart[i].itemPrice}`;
   }
   outString += ".";
   return outString;
