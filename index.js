@@ -41,10 +41,18 @@ function total() {
 
 function removeFromCart(item) {
   // get an array of indexes to remove
+  var foundCtr = 0;
   for (var i = cart.length-1; i >= 0; i--){
-    if (cart[i].itemName === item) {cart.splice(i,1); console.log(i)};
+    if (cart[i].itemName === item) {
+      cart.splice(i,1);
+      foundCtr++;
+    }
   }
-  return cart;
+  if (foundCtr === 0) {
+    return "That item is not in your cart";
+  } else {
+    return cart;
+  }
 }
 
 function placeOrder(cardNumber) {
