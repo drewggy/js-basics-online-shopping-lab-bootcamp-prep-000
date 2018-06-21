@@ -27,6 +27,7 @@ function viewCart() {
     outString += `${cart[i].itemName} at ${cart[i].itemPrice}`;
   }
   outString += ".";
+  return outString;
 }
 
 function total() {
@@ -45,4 +46,4 @@ function placeOrder(cardNumber) {
 console.log(addToCart("Almond Milk"));
 console.log(addToCart("Razors"));
 console.log(JSON.stringify(cart));
-viewCart();
+console.log(viewCart());
