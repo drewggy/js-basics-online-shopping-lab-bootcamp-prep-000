@@ -74,4 +74,4 @@ console.log(viewCart());
 console.log(total());
 removeFromCart("Eggs");
 console.log(viewCart());
-console.log(placeOrder(123456));
+console.log(placeOrder());
