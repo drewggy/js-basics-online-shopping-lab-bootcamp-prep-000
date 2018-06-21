@@ -22,7 +22,7 @@ function viewCart() {
 
   var outString = "In your cart, you have ";
   for (var i = 0; i < cart.length; i++){
-    console.log(`Loop ${i} - length is ${cart.length}`);
+//    console.log(`Loop ${i} - length is ${cart.length}`);
     if (i > 0 && i < cart.length-1) outString += ", ";
     if (cart.length > 1 && i === cart.length-1) outString += " and ";
     outString += `${cart[i].itemName} at ${cart[i].itemPrice}`;
