@@ -13,7 +13,7 @@ function addToCart(itemName) {
   var thePrice = Math.floor(Math.random()*10000);
   var newObj = Object.assign({});//, {itemName:`${itemName}`, itemPrice:47);
   cart.push(newObj);
-  return // `${itemName} has been added to your cart.`;
+  return  `${itemName} has been added to your cart.`;
 
 }
 
