@@ -58,4 +58,4 @@ console.log(addToCart("Eggs"));
 console.log(JSON.stringify(cart));
 console.log(viewCart());
 console.log(total());
-console.log(removeFromCart("Eggs"));
+console.log(removeFromCart("Razors"));
