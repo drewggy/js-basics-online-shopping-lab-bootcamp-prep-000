@@ -34,4 +34,4 @@ function placeOrder(cardNumber) {
 }
 addToCart("Almond Milk");
 addToCart("Razors");
-console.log(stringify(cart));
+//console.log(stringify(cart));
