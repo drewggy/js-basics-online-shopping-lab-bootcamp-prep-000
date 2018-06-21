@@ -32,7 +32,11 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var myTotal=0;
+  for (var i = 0; i < cart.length; i++){
+    myTotal += cart[i].itemPrice;
+  }
+  return myTotal;
 }
 
 function removeFromCart(item) {
@@ -49,3 +53,4 @@ console.log(addToCart("Razors"));
 console.log(addToCart("Eggs"));
 //console.log(JSON.stringify(cart));
 console.log(viewCart());
+console.log(total());
