@@ -11,7 +11,7 @@ function setCart(c) {
 
 function addToCart(itemName) {
 
-  var newObj = Object.assign({}, {itemName:`${itemName}`, itemPrice: 46})
+  var newObj = Object.assign({}, {itemName:`${itemName}`, itemPrice: MathFloor(Math.randon()*10000)/100})
   cart.push(newObj);
   return `${itemName} has been added to your cart.`;
 
@@ -32,6 +32,8 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
+
+
 addToCart("Almond Milk");
 addToCart("Razors");
 console.log(JSON.stringify(cart));
