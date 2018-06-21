@@ -63,5 +63,5 @@ console.log(addToCart("Eggs"));
 //console.log(JSON.stringify(cart));
 console.log(viewCart());
 console.log(total());
-removeFromCart("Almond Milk");
+removeFromCart("Eggs");
 console.log(viewCart());
