@@ -44,7 +44,7 @@ function removeFromCart(item) {
   for (var i = cart.length-1; i >= 0; i--){
     if (cart[i].itemName === item) {cart.splice(i,1); console.log(i)};
   }
-  return viewCart();
+  return cart;
 }
 
 function placeOrder(cardNumber) {
@@ -63,4 +63,4 @@ console.log(addToCart("Eggs"));
 console.log(JSON.stringify(cart));
 console.log(viewCart());
 console.log(total());
-console.log(removeFromCart("Almond Milk"));
+console.log(JSON.stringify(removeFromCart("Almond Milk")));
