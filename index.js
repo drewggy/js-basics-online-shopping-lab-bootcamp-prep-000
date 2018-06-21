@@ -45,3 +45,4 @@ function placeOrder(cardNumber) {
 console.log(addToCart("Almond Milk"));
 console.log(addToCart("Razors"));
 console.log(JSON.stringify(cart));
+viewCart();
