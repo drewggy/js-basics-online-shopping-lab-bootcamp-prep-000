@@ -43,7 +43,7 @@ function removeFromCart(item) {
   // get an array of indexes to remove
   var removeIndexArray = []
   for (var i = cart.length-1; i >= 0; i--){
-    if (cart[i].itemName === item) {removeIndexArray.splice(i,1); console.log(i)};
+    if (cart[i].itemName == item) {removeIndexArray.splice(i,1); console.log(i)};
   }
   return viewCart();
 }
