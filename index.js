@@ -18,7 +18,15 @@ function addToCart(itemName) {
 }
 
 function viewCart() {
-  // write your code here
+  if (cart.length < 1) return "There are no items in your cart.";
+
+  var outString = "In your cart, you have";
+  for (var i = 1; i < cart.length; i++){
+    if (cart.length > 1 && i < cart.lenght-1) then outString += ", ";
+    if (cart.length > 1 && i = cart.lenght-1) then outString += " and ";
+    outString += `${cart[i].itemName} at ${cart[i].itemPrice}`;
+  }
+  outString += ".";
 }
 
 function total() {
